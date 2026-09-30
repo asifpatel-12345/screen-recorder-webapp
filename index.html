@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Screen Recorder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Screen Recorder</h1>
+        <p class="subtitle">Record your screen directly from the browser</p>
+
+        <div class="video-container">
+            <video id="preview" autoplay muted playsinline></video>
+            <div id="status" class="status-badge">Ready to record</div>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">Start Recording</button>
+            <button id="stopBtn" class="btn btn-danger" disabled>Stop Recording</button>
+            <a id="downloadBtn" class="btn btn-success hidden" download="screen-recording.webm">Download Recording</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
